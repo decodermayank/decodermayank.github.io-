@@ -1,1 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mayank Prabhakar | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
 
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">MP<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+      <div class="orb orb1"></div>
+      <div class="orb orb2"></div>
+    </div>
+
+    <div class="hero-content">
+      <!-- Photo with ring animation -->
+      <div class="photo-wrapper reveal">
+        <div class="photo-ring ring1"></div>
+        <div class="photo-ring ring2"></div>
+        <div class="photo-ring ring3"></div>
+        <div class="photo-frame">
+          <!-- REPLACE src below with your actual photo path e.g. src="photo.jpg" -->
+          <img src="YOUR_PHOTO_HERE.jpg" alt="Mayank Prabhakar" class="hero-photo" id="heroPhoto"/>
+          <div class="photo-placeholder" id="photoPlaceholder">
+            <i class="fa fa-user"></i>
+            <span>Add Your Photo</span>
+          </div>
+        </div>
+        <div class="photo-glow"></div>
+      </div>
+
+      <div class="hero-text reveal delay-1">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Mayank<br/><span class="accent">Prabhakar</span></h1>
+        <p class="hero-role">
+          <span class="typewriter" id="typewriter"></span>
+          <span class="cursor-blink">|</span>
+        </p>
+        <p class="hero-sub">B.Tech CSE · Gautam Buddha University · Greater Noida</p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn-primary">Let's Connect <i class="fa fa-arrow-right"></i></a>
+          <a href="MAYANK_PRABHAKAR_RESUME.pdf" download class="btn-outline">Resume <i class="fa fa-download"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-hint">
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title reveal">About <span class="accent">Me</span></h2>
+      <div class="about-grid">
+        <div class="about-text reveal delay-1">
+          <p>B.Tech CSE first-year student with practical experience in <strong>social media management</strong>, <strong>content creation</strong>, and <strong>digital documentation</strong>. Skilled in handling structured tasks, maintaining consistency, and working on process-driven activities.</p>
+          <p>Currently building programming skills and exploring development through hands-on projects — from IoT systems to web platforms.</p>
+          <div class="about-tags">
+            <span class="tag">📱 Social Media</span>
+            <span class="tag">🎨 Design</span>
+            <span class="tag">⚙️ IoT</span>
+            <span class="tag">📝 Content</span>
+          </div>
+        </div>
+        <div class="about-stats reveal delay-2">
+          <div class="stat-card">
+            <span class="stat-num">6+</span>
+            <span class="stat-label">Skills Mastered</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">3+</span>
+            <span class="stat-label">Projects Built</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">NSS</span>
+            <span class="stat-label">E-Media Coordinator</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">2025</span>
+            <span class="stat-label">GBU Batch</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <h2 class="section-title reveal">My <span class="accent">Skills</span></h2>
+      <div class="skills-grid">
+
+        <div class="skill-card reveal delay-1">
+          <div class="skill-icon"><i class="fa fa-code"></i></div>
+          <h3>Tech Skills</h3>
+          <ul>
+            <li><span>C Programming</span><div class="bar"><div class="bar-fill" style="--w:60%"></div></div></li>
+            <li><span>HTML</span><div class="bar"><div class="bar-fill" style="--w:55%"></div></div></li>
+            <li><span>Java</span><div class="bar"><div class="bar-fill" style="--w:35%"></div></div></li>
+          </ul>
+        </div>
+
+        <div class="skill-card reveal delay-2">
+          <div class="skill-icon"><i class="fa fa-palette"></i></div>
+          <h3>Design Tools</h3>
+          <ul>
+            <li><span>Adobe Photoshop</span><div class="bar"><div class="bar-fill" style="--w:75%"></div></div></li>
+            <li><span>Adobe Illustrator</span><div class="bar"><div class="bar-fill" style="--w:65%"></div></div></li>
+            <li><span>Canva</span><div class="bar"><div class="bar-fill" style="--w:85%"></div></div></li>
+            <li><span>CorelDRAW</span><div class="bar"><div class="bar-fill" style="--w:60%"></div></div></li>
+          </ul>
+        </div>
+
+        <div class="skill-card reveal delay-3">
+          <div class="skill-icon"><i class="fa fa-brain"></i></div>
+          <h3>Soft Skills</h3>
+          <ul>
+            <li><span>Team Coordination</span><div class="bar"><div class="bar-fill" style="--w:90%"></div></div></li>
+            <li><span>Content Planning</span><div class="bar"><div class="bar-fill" style="--w:85%"></div></div></li>
+            <li><span>Time Management</span><div class="bar"><div class="bar-fill" style="--w:80%"></div></div></li>
+            <li><span>Attention to Detail</span><div class="bar"><div class="bar-fill" style="--w:88%"></div></div></li>
+          </ul>
+        </div>
+
+        <div class="skill-card reveal delay-4">
+          <div class="skill-icon"><i class="fa fa-share-nodes"></i></div>
+          <h3>Other Skills</h3>
+          <ul>
+            <li><span>Social Media Mgmt</span><div class="bar"><div class="bar-fill" style="--w:88%"></div></div></li>
+            <li><span>Excel / G-Sheets</span><div class="bar"><div class="bar-fill" style="--w:75%"></div></div></li>
+            <li><span>Video Editing</span><div class="bar"><div class="bar-fill" style="--w:60%"></div></div></li>
+            <li><span>Event Coordination</span><div class="bar"><div class="bar-fill" style="--w:80%"></div></div></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section class="section" id="experience">
+    <div class="container">
+      <h2 class="section-title reveal">Experience & <span class="accent">Activities</span></h2>
+      <div class="timeline">
+
+        <div class="timeline-item reveal delay-1">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">2025 – Present</span>
+            <h3>NSS GBU — E-Media & Technical Coordinator</h3>
+            <p>Managed social media, content, and poster design for NSS activities. Coordinated event promotion, media coverage, and documentation. Handled content planning and basic engagement tracking.</p>
+            <div class="timeline-tags">
+              <span>Social Media</span><span>Design</span><span>Coordination</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal delay-2">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">2025</span>
+            <h3>Content & Magazine Work</h3>
+            <p>Designed and contributed to NSS GBU magazines (layout + content). Currently working on a personal magazine project. Created written and visual content for campaigns and events.</p>
+            <div class="timeline-tags">
+              <span>Editorial</span><span>Layout Design</span><span>Writing</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal delay-3">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">2024–2025</span>
+            <h3>Event & Media Coordination</h3>
+            <p>Contributed to college event management and volunteer coordination. Managed media coverage, poster design, and documentation for multiple college events.</p>
+            <div class="timeline-tags">
+              <span>Events</span><span>Media</span><span>Poster Design</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <h2 class="section-title reveal">My <span class="accent">Projects</span></h2>
+      <div class="projects-grid">
+
+        <div class="project-card reveal delay-1">
+          <div class="project-icon">⚙️</div>
+          <h3>Smart Mess Queue System</h3>
+          <p>Sensor-based crowd entry management system that uses real-time detection logic to manage queue flow and reduce overcrowding.</p>
+          <div class="project-tags"><span>IoT</span><span>Sensors</span><span>C</span></div>
+        </div>
+
+        <div class="project-card reveal delay-2">
+          <div class="project-icon">🌐</div>
+          <h3>Basic Web Projects</h3>
+          <p>Exploring HTML for web structure and development. Building foundational web pages with proper layout, semantic tags, and styling.</p>
+          <div class="project-tags"><span>HTML</span><span>CSS</span><span>Web Dev</span></div>
+        </div>
+
+        <div class="project-card reveal delay-3">
+          <div class="project-icon">📖</div>
+          <h3>NSS GBU Magazine</h3>
+          <p>Designed and contributed to the NSS GBU magazine — handled layout, visual design, and editorial content creation from scratch.</p>
+          <div class="project-tags"><span>Design</span><span>Editorial</span><span>Photoshop</span></div>
+        </div>
+
+        <div class="project-card reveal delay-4">
+          <div class="project-icon">📊</div>
+          <h3>Social Media Pages</h3>
+          <p>Managed and grew Instagram, Facebook & YouTube pages — content scheduling, poster creation, and performance tracking.</p>
+          <div class="project-tags"><span>Content</span><span>Instagram</span><span>Analytics</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section class="section" id="education">
+    <div class="container">
+      <h2 class="section-title reveal">Academic <span class="accent">Journey</span></h2>
+      <div class="edu-grid">
+        <div class="edu-card reveal delay-1">
+          <div class="edu-icon">🎓</div>
+          <div>
+            <h3>Gautam Buddha University</h3>
+            <p class="edu-degree">B.Tech — Computer Science & Engineering</p>
+            <span class="edu-year">2025 – 2029</span>
+          </div>
+        </div>
+        <div class="edu-card reveal delay-2">
+          <div class="edu-icon">🏫</div>
+          <div>
+            <h3>Class 12</h3>
+            <p class="edu-degree">Higher Secondary Education</p>
+            <span class="edu-year">2025</span>
+          </div>
+        </div>
+        <div class="edu-card reveal delay-3">
+          <div class="edu-icon">📚</div>
+          <div>
+            <h3>Class 10</h3>
+            <p class="edu-degree">Secondary Education</p>
+            <span class="edu-year">2023</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <h2 class="section-title reveal">Let's <span class="accent">Connect</span></h2>
+      <div class="contact-grid">
+        <div class="contact-info reveal delay-1">
+          <div class="contact-item">
+            <i class="fa fa-phone"></i>
+            <div>
+              <span class="contact-label">Phone</span>
+              <a href="tel:+917983066911">+91 7983066911</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fa fa-envelope"></i>
+            <div>
+              <span class="contact-label">Email</span>
+              <a href="mailto:mayankraj1034@gmail.com">mayankraj1034@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fa fa-location-dot"></i>
+            <div>
+              <span class="contact-label">Location</span>
+              <span>Greater Noida, Uttar Pradesh</span>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="https://twitter.com/i_m_prabhakarr" target="_blank" class="social-btn"><i class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com/in/i-mayank-prabhakar-" target="_blank" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://instagram.com/i.mayank.prabhakar" target="_blank" class="social-btn"><i class="fab fa-instagram"></i></a>
+            <a href="https://fb.com/i.mayank.prabhakar" target="_blank" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://github.com/decodermayank" target="_blank" class="social-btn"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal delay-2" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <input type="text" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Email Address" required />
+          </div>
+          <div class="form-group">
+            <textarea rows="5" placeholder="Your Message..."></textarea>
+          </div>
+          <button type="submit" class="btn-primary full">Send Message <i class="fa fa-paper-plane"></i></button>
+          <p class="form-note" id="form-note"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Crafted with ❤️ by <span class="accent">Mayank Prabhakar</span> · 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Typewriter
+    const roles = ["Computer Science Student", "Content Creator", "IoT Enthusiast", "Poster Designer", "Social Media Manager"];
+    let rIdx = 0, cIdx = 0, del = false;
+    const tw = document.getElementById("typewriter");
+    function type() {
+      const cur = roles[rIdx];
+      tw.textContent = del ? cur.substring(0, cIdx--) : cur.substring(0, cIdx++);
+      if (!del && cIdx === cur.length + 1) { del = true; setTimeout(type, 1400); return; }
+      if (del && cIdx === 0) { del = false; rIdx = (rIdx + 1) % roles.length; }
+      setTimeout(type, del ? 50 : 90);
+    }
+    type();
+
+    // Cursor
+    const cur = document.getElementById("cursor");
+    const fol = document.getElementById("cursor-follower");
+    let mx = 0, my = 0, fx = 0, fy = 0;
+    document.addEventListener("mousemove", e => { mx = e.clientX; my = e.clientY; cur.style.left = mx + "px"; cur.style.top = my + "px"; });
+    function animFol() { fx += (mx - fx) * 0.12; fy += (my - fy) *.12; fol.style.left = fx + "px"; fol.style.top = fy + "px"; requestAnimationFrame(animFol); }
+    animFol();
+    document.querySelectorAll("a,button,.skill-card,.project-card").forEach(el => {
+      el.addEventListener("mouseenter", () => { cur.classList.add("hover"); fol.classList.add("hover"); });
+      el.addEventListener("mouseleave", () => { cur.classList.remove("hover"); fol.classList.remove("hover"); });
+    });
+
+    // Photo placeholder
+    const img = document.getElementById("heroPhoto");
+    const ph = document.getElementById("photoPlaceholder");
+    img.addEventListener("error", () => { img.style.display = "none"; ph.style.display = "flex"; });
+    img.addEventListener("load", () => { ph.style.display = "none"; });
+    if (!img.src || img.src.includes("YOUR_PHOTO")) { img.style.display = "none"; ph.style.display = "flex"; }
+
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add("visible"); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+
+    // Navbar scroll
+    window.addEventListener("scroll", () => {
+      document.getElementById("navbar").classList.toggle("scrolled", window.scrollY > 60);
+    });
+
+    // Nav active
+    const sections = document.querySelectorAll("section");
+    window.addEventListener("scroll", () => {
+      let cur = "";
+      sections.forEach(s => { if (window.scrollY >= s.offsetTop - 120) cur = s.id; });
+      document.querySelectorAll(".nav-link").forEach(l => { l.classList.toggle("active", l.getAttribute("href") === "#" + cur); });
+    });
+
+    // Hamburger
+    document.getElementById("hamburger").addEventListener("click", () => {
+      document.querySelector(".nav-links").classList.toggle("open");
+    });
+
+    // Form
+    function handleSubmit(e) {
+      e.preventDefault();
+      document.getElementById("form-note").textContent = "✅ Message sent! I'll get back to you soon.";
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>
